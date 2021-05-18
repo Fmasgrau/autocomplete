@@ -17,10 +17,11 @@ class AutocompleteClass extends React.Component {
 
         this._filterData = this.filteredData.bind(this)
         this.pullData = this.pullData.bind(this)
+      
     }
 
 
-   DATA_URL = "https://jsonplaceholder.typicode.com/users";
+   
 
    _filterData = (input, data) => {
     if (input === "") {
@@ -33,15 +34,15 @@ class AutocompleteClass extends React.Component {
 
    pullData = () => {
     let dataPulled;
-    axios.get(DATA_URL).then((res) => {
-      dataPulled = this._filterData(userInput, res.data);
+    axios.get("https://jsonplaceholder.typicode.com/users").then((res) => {
+      dataPulled = this._filterData(this.state.userInput, res.data);
 
       if (dataPulled?.length > 0) {
         this.setState({...this.state, showSuggestions: true});
       }
 
       if (dataPulled?.length > 0) {
-        if (dataPulled[0].name === userInput) {
+        if (dataPulled[0].name === this.state.userInput) {
             this.setState({...this.state, showSuggestions: false});
           return;
         } else {
