@@ -1,0 +1,20 @@
+.ul-custom {
+  background-color: white;
+  list-style-type: none;
+  width: 20%;
+  border: solid 1px black;
+  margin: 0;
+  padding: 0;
+  border-top: none;
+  margin-left: 10%;
+}
+
+.input-custom {
+    width: 20%; 
+    margin-left: 10%;
+}
+
+.a-custom {
+    text-decoration: none; 
+    background-color: red ;
+}
