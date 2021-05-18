@@ -53,20 +53,12 @@ class AutocompleteClass extends React.Component {
     });
   };
 
-//   useEffect(() => {
-//     const getData = setTimeout(() => pullData(), 300);
+  componentDidUpdate () {
+    const getData = setTimeout(() => this.pullData(), 300);
 
-//     return () => {
-//       clearTimeout(getData);
-//     };
-//   }, [userInput]);
+    
+  }
 
-//   useEffect(() => {
-//     if (userInput === "") {
-//       setShowSuggestions(false);
-//       return;
-//     }
-//   }, [userInput]);
 
   render() {
   return (
