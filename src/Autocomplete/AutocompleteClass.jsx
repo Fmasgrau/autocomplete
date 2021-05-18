@@ -3,7 +3,7 @@ import axios from "axios";
 import "./styles.css";
 import { render } from "@testing-library/react";
 
-class Autocomplete extends React.Component {
+class AutocompleteClass extends React.Component {
 
     constructor(){
         super()
@@ -96,4 +96,4 @@ class Autocomplete extends React.Component {
   );
 }
 };
-export default Autocomplete;
+export default AutocompleteClass;
