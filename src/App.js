@@ -1,4 +1,4 @@
-import eact from 'react'
+import React from 'react'
 import Autocomplete from './Autocomplete/Autocomplete';
 
 function App() {
