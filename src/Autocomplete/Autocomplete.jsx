@@ -7,7 +7,7 @@ const Autocomplete = () => {
   const [showSuggestions, setShowSuggestions] = useState(false);
   const [userInput, setUserInput] = useState("");
 
-  const DATA_URL = "https://jsonplaceholder.typicode.com/users"
+  const DATA_URL = "https://jsonplaceholder.typicode.com/users";
 
   const _filterData = (input, data) => {
     if (input === "") {
