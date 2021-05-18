@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import axios from "axios";
 import "./styles.css";
-import { render } from "@testing-library/react";
+
 
 class AutocompleteClass extends React.Component {
 
