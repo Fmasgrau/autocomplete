@@ -15,7 +15,7 @@ class AutocompleteClass extends React.Component {
             showSuggestions: false
         }
 
-        this._filterData = this.filteredData.bind(this)
+        this._filterData = this._filterData.bind(this)
         this.pullData = this.pullData.bind(this)
       
     }
